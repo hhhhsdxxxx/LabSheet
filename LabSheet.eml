@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/LabSheet"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="BmobSDK_V3.3.2_0127" value="project"/>
+		<level name="BmobPush_V0.5beta_1027" value="project"/>
+		<level name="BASE64" value="project"/>
+	</levels>
+</component>

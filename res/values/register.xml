@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rg_username">用户名</string>
+    <string name="rg_password">密码</string>
+    <string name="rg_confirm">确认密码</string>
+    <string name="rg_age">年龄</string>
+    <string name="rg_job">职业</string>
+    <string name="rg_info_user_name">请输入用户名</string>
+    <string name="rg_info_user_password">请输入密码</string>
+    <string name="rg_info_confirm_password">请再次输入密码</string>
+    <string name="rg_info_job">请输入您的职业</string>
+    <string name="rg_info_age">请输入您的年龄</string>
+    <string name="rg_btn_register">注册</string>
+    <string name="rg_btn_cancel">取消</string>
+</resources>

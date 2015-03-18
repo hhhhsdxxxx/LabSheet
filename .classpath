@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/BmobSDK_V3.3.2_0127"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/BmobPush_V0.5beta_1027"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/BASE64"/>
+	<classpathentry kind="output" path="out/production/LabSheet"/>
+</classpath>

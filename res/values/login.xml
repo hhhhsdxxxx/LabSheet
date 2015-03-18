@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lg_login">登入</string>
+    <string name="lg_register">注册</string>
+    <string name="lg_username">用户名</string>
+    <string name="lg_key">密码</string>
+    <string name="lg_ht_user">用户名不大于20个字符</string>
+    <string name="lg_ht_key">不大于20个字符</string>
+    <string name="lg_guide_login">非用户登录</string>
+</resources>

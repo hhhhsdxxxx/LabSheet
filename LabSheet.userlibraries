@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="BmobSDK_V3.3.2_0127">
+    <archive path="C:/Users/Henry/OneDrive/LabSheet/libs/BmobSDK_V3.3.2_0127.jar" />
+  </library>
+  <library name="BASE64">
+    <archive path="C:/Users/Henry/OneDrive/LabSheet/libs/BASE64.jar" />
+  </library>
+  <library name="BmobPush_V0.5beta_1027">
+    <archive path="C:/Users/Henry/OneDrive/LabSheet/libs/BmobPush_V0.5beta_1027.jar" />
+  </library>
+</eclipse-userlibraries>
+

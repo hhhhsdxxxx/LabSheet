@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg_guide_login"
+            android:id="@+id/guide_login"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg_login"
+            android:id="@+id/lg_login"
+            android:layout_alignStart="@id/guide_login"
+            android:layout_marginStart="-30dp"
+            android:layout_marginBottom="101dp"
+            android:layout_alignParentBottom="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg_register"
+            android:id="@+id/lg_register"
+            android:layout_marginStart="50dp"
+            android:layout_alignTop="@+id/lg_login"
+            android:layout_toEndOf="@+id/lg_login"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/lg_username"
+              android:text="@string/lg_username"
+              android:layout_marginBottom="33dp"
+              android:textSize="20sp"
+              android:layout_above="@+id/lg_key"
+              android:layout_alignStart="@id/guide_login"
+              android:layout_marginStart="-90dp"
+              />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lg_key"
+              android:layout_centerVertical="true"
+              android:layout_alignStart="@id/lg_username"
+              android:id="@+id/lg_key"
+              android:textSize="20sp"/>
+    <EditText android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:hint="@string/lg_ht_user"
+              android:id="@+id/lg_et_user"
+              android:layout_alignTop="@+id/lg_username"
+              android:layout_alignEnd="@id/lg_register"
+              android:textSize="18sp"
+              android:layout_alignStart="@id/lg_username"
+              android:layout_marginStart="70dp"
+              android:layout_marginEnd="-40dp"/>
+    <EditText android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/lg_pass"
+              android:hint="@string/lg_ht_key"
+              android:layout_alignStart="@id/lg_et_user"
+              android:layout_alignTop="@id/lg_key"
+              android:textSize="18sp"
+              android:layout_alignEnd="@id/lg_register"
+              android:layout_marginEnd="-40dp"
+              android:inputType="textPassword"/>
+</RelativeLayout>

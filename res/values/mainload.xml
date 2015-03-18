@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ml_keyword">仅输入异常数据</string>
+    <string name="ml_whole_word">全数据输入</string>
+    <string name="ml_take_photo">拍照</string>
+    <string name="ml_fmdata">以前的结果</string>
+    <string name="ml_result">结果报告</string>
+    <string name="ml_info_exception">检查项目：</string>
+    <string name="ml_info_value">结果数值：</string>
+    <string name="ml_btn_confirm">确认输入</string>
+    <string name="ml_info_type">化验单类型：</string>
+    <string name="ml_info_va">请输入相应的数值</string>
+    <string name="ml_btn_clear">清空输入</string>
+    <string name="ml_info_whole">指标</string>
+    <string name="ml_info_whole_value">数值</string>
+    <string name="ml_btn_upload">储存化验单数据</string>
+</resources>

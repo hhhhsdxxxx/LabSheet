@@ -13,5 +13,5 @@
     <string name="ml_btn_clear">清空输入</string>
     <string name="ml_info_whole">指标</string>
     <string name="ml_info_whole_value">数值</string>
-    <string name="ml_btn_upload">储存化验单数据</string>
+    <string name="ml_btn_upload">上传数据</string>
 </resources>

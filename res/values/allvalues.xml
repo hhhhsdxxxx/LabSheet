@@ -9,7 +9,7 @@
     <string-array name="zb_blank">
         <item>暂未支持该功能</item>
     </string-array>
-    <string-array name="zb_blood">
+    <string-array name="zb_blood_base">
         <item>白细胞（WBC）</item>
         <item>红细胞（RBC）</item>
         <item>血红蛋白（HGB）</item>
@@ -35,8 +35,35 @@
         <item>血小板压积（PCT）</item>
         <item>大型血小板比率（P-LCR）</item>
         <item>血沉（ESR）</item>
+        <item>网织红细胞（RC）</item>
     </string-array>
-    <string-array name="zb_ch_blood">
-        <item></item>
+    <string-array name="zb_blood_chm">
+        <item>谷丙转氨酶（ALT）</item>
+        <item>谷草转氨酶（AST）</item>
+        <item>谷氨酰转肽酶（GGT）</item>
+        <item>碱性磷酸酶（ALP）</item>
+        <item>总蛋白（TP）</item>
+        <item>白蛋白（ALB）</item>
+        <item>球蛋白（GLB）</item>
+        <item>白球比值（A/G）</item>
+        <item>前白蛋白（PA）</item>
+        <item>总胆红素（TBIL）</item>
+        <item>直接胆红素（DBIL）</item>
+        <item>间接胆红素（IBIL）</item>
+        <item>二氧化碳（ECO2）</item>
+        <item>血肌酐（CR-S）</item>
+        <item>尿素氮（UREA）</item>
+        <item>血糖（GLU）</item>
+        <item>尿酸（URIC）</item>
+        <item>总胆汁酸（TBA）</item>
+        <item>单氨氧化酶（MAO）</item>
+        <item>血清钾（K+）</item>
+        <item>血清钠（NA+）</item>
+        <item>血清氯（CL-）</item>
+        <item>血清钙（CA）</item>
+        <item>血清磷（PHOS）</item>
+        <item>血清镁（MG）</item>
+        <item>胆固醇（TC）</item>
+        <item>甘油三酯（TG）</item>
     </string-array>
 </resources>

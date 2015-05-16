@@ -21,16 +21,7 @@
                  android:layout_alignEnd="@id/ml_get_photo"
                  android:layout_marginEnd="70dp"
                  android:layout_alignParentBottom="true"/>
-    <ImageButton android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:id="@+id/ml_get_keyword"
-                 android:src="@drawable/ic_keyword"
-                 android:scaleType="fitXY"
-                 android:background="#e0000000"
-                 android:contentDescription="@string/ml_keyword"
-                 android:layout_alignEnd="@id/ml_get_whole_word"
-                 android:layout_marginEnd="70dp"
-                 android:layout_alignParentBottom="true"/>
+
     <ImageButton android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:contentDescription="@string/ml_fmdata"
@@ -41,20 +32,10 @@
                  android:layout_alignStart="@id/ml_get_photo"
                  android:layout_alignParentBottom="true"
                  android:layout_marginStart="70dp"/>
-    <ImageButton android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:contentDescription="@string/ml_result"
-                 android:id="@+id/ml_show_result"
-                 android:src="@drawable/ic_result"
-                 android:scaleType="fitXY"
-                 android:background="#e0000000"
-                 android:layout_alignStart="@id/ml_make_analysis"
-                 android:layout_alignParentBottom="true"
-                 android:layout_marginStart="70dp"/>
 
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:layout_marginTop="50dp"
+              android:layout_marginTop="30dp"
               android:id="@+id/ky_info_type"
               android:text="@string/ml_info_type"
               android:textSize="25sp"/>
@@ -88,6 +69,11 @@
               android:layout_below="@id/ky_info_va"
               android:hint="@string/ml_info_va"
               android:inputType="numberDecimal"/>
+    <Spinner android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:spinnerMode="dropdown"
+             android:id="@+id/ky_former"
+             android:layout_below="@id/ky_value_et"/>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ml_btn_upl"
@@ -101,8 +87,7 @@
             android:text="@string/ml_btn_confirm"
             android:layout_above="@id/ml_btn_upl"
             android:layout_alignStart="@id/ml_btn_upl"
-            android:layout_marginStart="-50dp"
-            />
+            android:layout_marginStart="-70dp"/>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ml_btn_clear"

@@ -20,5 +20,6 @@
         </activity>
         <activity android:name=".Register" android:label="注册"/>
         <activity android:name=".MainLoad" android:label="主登录界面"/>
+        <activity android:name=".Result"/>
     </application>
 </manifest>

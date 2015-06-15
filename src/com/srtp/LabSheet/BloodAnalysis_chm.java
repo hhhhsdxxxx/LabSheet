@@ -39,41 +39,10 @@ public class BloodAnalysis_chm {
             {42, 42, 40, 179, 80, 55, 32, 2.5, 500, 25, 9, 16, 30, 133, 6.9, 6.0, 416, 25.0, 8.8, 5.3, 145, 108, 2.7, 1.6, 1.1, 6.0, 1.70};
 
 
-    private static HashMap<String, Integer> name = new HashMap<String, Integer>();
 
     private double[] value;
     private double[] diff;
     private int df, hl;
-
-    public static void Initial(){
-        name.put("ALT", 0);
-        name.put("AST", 1);
-        name.put("GGT", 2);
-        name.put("ALP", 3);
-        name.put("TP", 4);
-        name.put("ALB", 5);
-        name.put("GLB", 6);
-        name.put("A/G", 7);
-        name.put("PA", 8);
-        name.put("TBIL", 9);
-        name.put("DBIL", 10);
-        name.put("IBIL", 11);
-        name.put("ECO2", 12);
-        name.put("CR-S", 13);
-        name.put("UREA", 14);
-        name.put("GLU", 15);
-        name.put("URIC", 16);
-        name.put("TBA", 17);
-        name.put("MAO", 18);
-        name.put("K", 19);
-        name.put("NA", 20);
-        name.put("CL", 21);
-        name.put("CA", 22);
-        name.put("PHOS", 23);
-        name.put("MG", 24);
-        name.put("TC", 25);
-        name.put("TG", 26);
-    }
 
     public BloodAnalysis_chm(){
         value = new double[27];
@@ -82,9 +51,6 @@ public class BloodAnalysis_chm {
             value[i] = diff[i] = -1;
     }
 
-    public static int getnId(String zb_name){
-        return name.get(zb_name);
-    }
 
     private double differ(int i, double zb_value){
         double re = zb_value - top[i];
@@ -197,5 +163,15 @@ public class BloodAnalysis_chm {
         else
             re.append(Disease.NORMAL);
         return re.toString();
+    }
+
+    public void copy(double[] s) {
+        if (s.length == 27) {
+            int i = 0;
+            while(i < 27 && s[i] != -1) {
+                value[i] = s[i];
+                i++;
+            }
+        }
     }
 }

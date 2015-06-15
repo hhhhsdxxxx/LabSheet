@@ -22,8 +22,43 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="BmobSDK_V3.3.2_0127" level="project" />
-    <orderEntry type="library" name="BmobPush_V0.5beta_1027" level="project" />
-    <orderEntry type="library" name="BASE64" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/BASE64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/BmobPush_V0.5beta_1027.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/BmobSDK_V3.3.2_0127.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/tess-two.tesseract3.01-leptonica1.68-LibJPEG6b.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/libs/tess-two.tesseract3.01-leptonica1.68-LibJPEG6b.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

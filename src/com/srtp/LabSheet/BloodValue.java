@@ -1,5 +1,7 @@
 package com.srtp.LabSheet;
 
+import android.util.Log;
+
 import java.util.HashMap;
 
 /**
@@ -37,49 +39,14 @@ public class BloodValue {
     private final static double[] top =
             {10, 5.5, 160, 50, 100, 32, 360, 300, 40, 70, 8, 5.0, 1.0, 4.0, -1, 0.8,  0.5, 0.1, 15.4, 54, 17, 13, 0.35, 43,  15, 1.5};
 
-    private static HashMap<String, Integer> name = new HashMap<String, Integer>();
-
     protected double[] value;
     protected double[] diff;
 
-    public BloodValue(){
+    public BloodValue() {
         value = new double[26];
         diff = new double[26];
-        for(int i = 0; i < 26; i++)
+        for (int i = 0; i < 26; i++)
             value[i] = diff[i] = -1;
-    }
-
-    public static void Initial(){
-        name.put("WBC", 0);
-        name.put("RBC", 1);
-        name.put("HGB", 2);
-        name.put("HCT", 3);
-        name.put("MCV", 4);
-        name.put("MCH", 5);
-        name.put("MCHC", 6);
-        name.put("PLT", 7);
-        name.put("LYMPHP", 8);
-        name.put("NEUTP", 9);
-        name.put("MONOP", 10);
-        name.put("EOP", 11);
-        name.put("BASOP", 12);
-        name.put("LYMPHN", 13);
-        name.put("NEUT", 14);
-        name.put("MONON", 15);
-        name.put("EON", 16);
-        name.put("BASON", 17);
-        name.put("RDW-CV", 18);
-        name.put("RDW-SD", 19);
-        name.put("PDW", 20);
-        name.put("MPV", 21);
-        name.put("PCT", 22);
-        name.put("P-LCR", 23);
-        name.put("ESR", 24);
-        name.put("RC", 25);
-    }
-
-    public final int getnId(String zb_name){
-        return name.get(zb_name);
     }
 
     protected final double differ(int i, double zb_value){
@@ -119,5 +86,54 @@ public class BloodValue {
     public void clear(){
         for(int i = 0; i < 26; i++)
             value[i] = diff[i] = -1;
+    }
+
+    public static void get_ocr(String target, String []name, double[] sourse){
+        int i = 0;
+        for(String s : name){
+            int k = target.indexOf(s);
+            if(k != -1){
+                char ch;
+                int j = s.length();
+                ch=target.charAt(k+j);
+                while(ch<'0' || ch > '9') {
+                    j++;
+                    ch = target.charAt(k+j);
+                }
+                if(j > 8 || (j>=5 && s.equals("红细胞"))) {
+                    sourse[i++] = -1;
+                    continue;
+                }
+                int end = j+1;
+                ch=target.charAt(k+end);
+                while((ch>='0' && ch <= '9') || ch=='.'){
+                    end++;
+                    ch = target.charAt(k+end);
+                }
+                String num = target.substring(k+j, k+end);
+                double re;
+                try{
+                    re = Double.parseDouble(num);
+                    sourse[i] = re;
+                }
+                catch (Exception err){
+                    sourse[i] = -1;
+                }
+            }
+            else{
+                sourse[i] = -1;
+            }
+            i++;
+        }
+    }
+
+    public void copy(double[] s) {
+        if (s.length == 26) {
+            int i = 0;
+            while(i < 27 && s[i] != -1) {
+                value[i] = s[i];
+                i++;
+            }
+        }
     }
 }

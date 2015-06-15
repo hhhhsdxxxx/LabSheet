@@ -70,4 +70,6 @@ public class BloodAnalysis_base extends BloodValue{
             re.deleteCharAt(re.length()-1);
         return re.toString();
     }
+
+
 }

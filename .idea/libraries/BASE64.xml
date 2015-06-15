@@ -2,8 +2,11 @@
   <library name="BASE64">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/libs/BASE64.jar!/" />
+      <root url="file://$PROJECT_DIR$/libs" />
+      <root url="jar://$PROJECT_DIR$/libs/tess-two.tesseract3.01-leptonica1.68-LibJPEG6b.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" />
   </library>
 </component>
